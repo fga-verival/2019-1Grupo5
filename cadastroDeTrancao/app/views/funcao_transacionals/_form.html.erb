@@ -10,45 +10,72 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <form>
-    <div class="form-group">
-      <label for="nameFunc">Nome</label>
-      <input class="form-control" type="text" id="funcao_transacional.nameFunc" 
-        placeholder="Insira o nome da função">
+  
+  <form data-toggle="validator">
+    <div class="field">
+      <div class="form-group">
+        <label for="nameFunc">Nome</label>
+        <input class="form-control" type="text" id="funcao_transacional.nameFunc" 
+          placeholder="Insira o nome da função">
+      </div> 
     </div>
-  </fom> 
+
+    <div class="field">
+      <div class="form-group">
+        <label for="typeFunc">Tipo da Função</label>
+        <select class="form-control" id="funcao_transacional.typeFunc">
+          <option value=1>EE</option>
+          <option value=2>CE</option>
+          <option value=3>SE</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="form-group">
+        <label for="param1">Quantidade de ALRs</label>
+        <input class="form-control" type="text" id="funcao_transacional.param1" 
+          placeholder="Insira quantidade de ALRs">
+      </div> 
+    </div>
+    
+    <div class="field">
+      <div class="form-group">
+        <label for="param2">Quantidade de DERs</label>
+      <input class="form-control" type="text" id="funcao_transacional.param2" 
+        placeholder="Insira quantidade de DERs">
+      </div>
+    </div>
+    
+    <div class="field">
+      <div class="form-group">
+        <label for="complexity">Quantidade de DERs</label>
+      <input class="form-control" type="text" id="funcao_transacional.complexity" 
+        placeholder="">
+      </div>
+    </div>
+    
+    <div class="field">
+    <div class="form-group">
+      <label for="qntdPF">Quantidade de DERs</label>
+    <input class="form-control" type="text" id="funcao_transacional.qntdPF" 
+      placeholder="">
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :typeFunc %><br>
-    <%= f.text_field :typeFunc %>
-  </div>
-  <div class="field">
-    <%= f.label :param1 %><br>
-    <%= f.text_field :param1 %>
-  </div>
-  <div class="field">
-    <%= f.label :param2 %><br>
-    <%= f.text_field :param2 %>
-  </div>
-  <div class="field">
-    <%= f.label :complexity %><br>
-    <%= f.text_field :complexity %>
-  </div>
-  <div class="field">
-    <%= f.label :qntdPF %><br>
-    <%= f.text_field :qntdPF %>
-  </div>
-  <div class="field">
-    <%= f.label :nameCounter %><br>
-    <%= f.text_field :nameCounter %>
-  </div>
-  <div class="field">
-    <%= f.label :registry %><br>
-    <%= f.datetime_select :registry %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+    <div class="field">
+      <div class="form-group">
+        <label for="nameCounter">Informe Seu Nome</label>
+        <input class="form-control" type="text" id="funcao_transacional.nameCounter" 
+          placeholder="Insira seu nome">
+      </div>
+    </div>
+
+    <div class="field">
+      <%= f.label :registry %><br>
+      <%= f.datetime_select :registry %>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <script src="js/validator.min.js"></script>
 <% end %>
