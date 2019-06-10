@@ -1,0 +1,54 @@
+<%= form_for(@funcao_transacional) do |f| %>
+  <% if @funcao_transacional.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@funcao_transacional.errors.count, "error") %> prohibited this funcao_transacional from being saved:</h2>
+
+      <ul>
+      <% @funcao_transacional.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <form>
+    <div class="form-group">
+      <label for="nameFunc">Nome</label>
+      <input class="form-control" type="text" id="funcao_transacional.nameFunc" 
+        placeholder="Insira o nome da função">
+    </div>
+  </fom> 
+  </div>
+  <div class="field">
+    <%= f.label :typeFunc %><br>
+    <%= f.text_field :typeFunc %>
+  </div>
+  <div class="field">
+    <%= f.label :param1 %><br>
+    <%= f.text_field :param1 %>
+  </div>
+  <div class="field">
+    <%= f.label :param2 %><br>
+    <%= f.text_field :param2 %>
+  </div>
+  <div class="field">
+    <%= f.label :complexity %><br>
+    <%= f.text_field :complexity %>
+  </div>
+  <div class="field">
+    <%= f.label :qntdPF %><br>
+    <%= f.text_field :qntdPF %>
+  </div>
+  <div class="field">
+    <%= f.label :nameCounter %><br>
+    <%= f.text_field :nameCounter %>
+  </div>
+  <div class="field">
+    <%= f.label :registry %><br>
+    <%= f.datetime_select :registry %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

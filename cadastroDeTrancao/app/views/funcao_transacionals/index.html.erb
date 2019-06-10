@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Funções Transacionais</h1>
+
+<table>
+  <tbody>
+    <% @funcao_transacionals.each do |funcao_transacional| %>
+      <tr>
+        <td><%= funcao_transacional.nameFunc %></td>
+        <td><%= funcao_transacional.typeFunc %></td>
+        <td><%= funcao_transacional.param1 %></td>
+        <td><%= funcao_transacional.param2 %></td>
+        <td><%= funcao_transacional.complexity %></td>
+        <td><%= funcao_transacional.qntdPF %></td>
+        <td><%= funcao_transacional.nameCounter %></td>
+        <td><%= funcao_transacional.registry %></td>
+        <td><%= link_to 'Show', funcao_transacional %></td>
+        <td><%= link_to 'Edit', edit_funcao_transacional_path(funcao_transacional) %></td>
+        <td><%= link_to 'Destroy', funcao_transacional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<a class="btn btn-primary" href="/funcao_transacionals/new" role="button">Incluir Nova Função</a>
