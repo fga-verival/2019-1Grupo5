@@ -1,0 +1,82 @@
+<%= form_for(@funcao_transacional) do |f| %>
+  <% if @funcao_transacional.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@funcao_transacional.errors.count, "error") %> prohibited this funcao_transacional from being saved:</h2>
+
+      <ul>
+      <% @funcao_transacional.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <form data-toggle="validator">
+    <div class="field">
+      <div class="form-group">
+        <label for="nameFunc">Nome</label>
+        <input class="form-control" type="text" id="funcao_transacional.nameFunc" 
+          placeholder="Insira o nome da função" required>
+      </div>  
+    </div>
+
+    <div class="field">
+      <div class="form-group">
+        <label for="typeFunc">Tipo da Função</label>
+        <select class="form-control" id="funcao_transacional.typeFunc">
+        <option>--selecione uma opção</option>
+          <option value=1>EE</option>
+          <option value=2>CE</option>
+          <option value=3>SE</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="form-group">
+        <label for="param1">Quantidade de ALRs</label>
+        <input class="form-control" type="text" id="funcao_transacional.param1" 
+          placeholder="Insira quantidade de ALRs" required>
+      </div> 
+    </div>
+    
+    <div class="field">
+      <div class="form-group">
+        <label for="param2">Quantidade de DERs</label>
+      <input class="form-control" type="text" id="funcao_transacional.param2" 
+        placeholder="Insira quantidade de DERs" required>
+      </div>
+    </div>
+    
+    <div class="field">
+      <div class="form-group">
+        <label for="complexity">Complexidade da Função</label>
+      <input class="form-control" type="text" id="funcao_transacional.complexity" 
+        placeholder="">
+      </div>
+    </div>
+    
+    <div class="field">
+    <div class="form-group">
+      <label for="qntdPF">Quantidade de PF - Pontos de Função</label>
+    <input class="form-control" type="text" id="funcao_transacional.qntdPF" 
+      placeholder="">
+    </div>
+  </div>
+
+    <div class="field">
+      <div class="form-group">
+        <label for="nameCounter">Informe Seu Nome</label>
+        <input class="form-control" type="text" id="funcao_transacional.nameCounter" 
+          placeholder="Insira seu nome" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <%= f.label :registry %><br>
+      <%= f.datetime_select :registry %>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <script src="js/validator.min.js"></script>
+<% end %>
