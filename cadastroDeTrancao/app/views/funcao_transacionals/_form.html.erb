@@ -16,14 +16,15 @@
       <div class="form-group">
         <label for="nameFunc">Nome</label>
         <input class="form-control" type="text" id="funcao_transacional.nameFunc" 
-          placeholder="Insira o nome da função">
-      </div> 
+          placeholder="Insira o nome da função" required>
+      </div>  
     </div>
 
     <div class="field">
       <div class="form-group">
         <label for="typeFunc">Tipo da Função</label>
         <select class="form-control" id="funcao_transacional.typeFunc">
+        <option>--selecione uma opção</option>
           <option value=1>EE</option>
           <option value=2>CE</option>
           <option value=3>SE</option>
@@ -35,7 +36,7 @@
       <div class="form-group">
         <label for="param1">Quantidade de ALRs</label>
         <input class="form-control" type="text" id="funcao_transacional.param1" 
-          placeholder="Insira quantidade de ALRs">
+          placeholder="Insira quantidade de ALRs" required>
       </div> 
     </div>
     
@@ -43,13 +44,13 @@
       <div class="form-group">
         <label for="param2">Quantidade de DERs</label>
       <input class="form-control" type="text" id="funcao_transacional.param2" 
-        placeholder="Insira quantidade de DERs">
+        placeholder="Insira quantidade de DERs" required>
       </div>
     </div>
     
     <div class="field">
       <div class="form-group">
-        <label for="complexity">Quantidade de DERs</label>
+        <label for="complexity">Complexidade da Função</label>
       <input class="form-control" type="text" id="funcao_transacional.complexity" 
         placeholder="">
       </div>
@@ -57,7 +58,7 @@
     
     <div class="field">
     <div class="form-group">
-      <label for="qntdPF">Quantidade de DERs</label>
+      <label for="qntdPF">Quantidade de PF - Pontos de Função</label>
     <input class="form-control" type="text" id="funcao_transacional.qntdPF" 
       placeholder="">
     </div>
@@ -67,7 +68,7 @@
       <div class="form-group">
         <label for="nameCounter">Informe Seu Nome</label>
         <input class="form-control" type="text" id="funcao_transacional.nameCounter" 
-          placeholder="Insira seu nome">
+          placeholder="Insira seu nome" required>
       </div>
     </div>
 
