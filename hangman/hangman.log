@@ -1,0 +1,34 @@
+DEBUG:root:word: ara
+Set: set(['a', 'r'])
+2 letters
+DEBUG:root:a not guessed
+DEBUG:root:bcdefghijklmnopqrstuvwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:bcdefghijklmopqrstuvwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:bcdefghijklmopqrstuwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:cdefghijklmopqrstuwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:cdfghijklmopqrstuwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:cdfghijklmopqrtuwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:cdfhijklmopqrtuwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:cdfhijlmopqrtuwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:cdfhjlmopqrtuwxyz
+DEBUG:root:already guessed: a_ a
+DEBUG:root:r not guessed
+DEBUG:root:r not guessed
